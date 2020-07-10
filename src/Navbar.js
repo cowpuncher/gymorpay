@@ -1,24 +1,23 @@
 import React from 'react'
-import {View, Text, StyleSheet} from 'react-native' 
+import {View, StyleSheet} from 'react-native' 
+import { Header } from 'react-native-elements'
 
 export const Navbar = (props) => {
     return (
-        <View style={styles.navbar}>
-            <Text style={styles.text}>Лента</Text>
+        <View >
+            <Header
+            leftComponent={{ icon: 'menu', color: '#fff' }}
+            centerComponent={{ text: 'Лента', style: { color: '#fff', fontSize: 18 } }}
+            rightComponent={{ icon: 'home', color: '#fff' }}
+            containerStyle={{
+                backgroundColor: '#000000',
+                justifyContent: 'space-between',
+            }}
+            />
         </View>
     )
 }
 
 const styles = StyleSheet.create({
-    navbar: {
-        height: 100,
-        alignItems: 'center',
-        justifyContent: 'flex-end',
-        backgroundColor: '#000',
-        paddingBottom: 20
-    },
-    text: {
-        color: '#fff',
-        fontSize: 18
-    }
+   
 })
