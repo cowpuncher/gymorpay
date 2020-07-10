@@ -1,7 +1,7 @@
 import React from 'react'
-import { View, ImageBackground, Text, Button, TouchableHighlight, StyleSheet } from 'react-native'
+import { View, ImageBackground, TextInput, Text, Button, TouchableHighlight, StyleSheet } from 'react-native'
 import {Icon} from 'react-native-elements'
-import { Input } from '../src/Components/Input'
+import { Input } from './Components/Input'
 
 export const Registration = () => {
     return (

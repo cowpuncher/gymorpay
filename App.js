@@ -7,7 +7,8 @@ import { Content } from './src/Components/Content'
 export default function App() {
   return (
     <View style={styles.container}>
-      <Registration />
+      <Navbar />
+      <Content />
 
     </View>
   );
