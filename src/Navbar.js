@@ -8,7 +8,7 @@ export const Navbar = (props) => {
             <Header
             leftComponent={{ icon: 'menu', color: '#fff' }}
             centerComponent={{ text: 'Лента', style: { color: '#fff', fontSize: 18 } }}
-            rightComponent={{ icon: 'home', color: '#fff' }}
+            rightComponent={{ icon: 'accessibility', color: '#fff' }}
             containerStyle={{
                 backgroundColor: '#000000',
                 justifyContent: 'space-between',

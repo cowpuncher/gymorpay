@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, ImageBackground, TextInput, Text, Button, TouchableHighlight, StyleSheet } from 'react-native'
 import {Icon} from 'react-native-elements'
+import { Input } from './Components/Input'
 
 export const Registration = () => {
     return (
@@ -13,17 +14,11 @@ export const Registration = () => {
                     <Text  style={styles.title}>
                         GYM or pay
                     </Text>
-                    <TextInput
+                    <Input
                         placeholder='e-mail'
-                        style={styles.input}
-                        autoCompleteType='username'
-                        placeholderTextColor='white'
                     />
-                    <TextInput
+                    <Input
                         placeholder='password'
-                        style={styles.input}
-                        autoCompleteType='password'
-                        placeholderTextColor='white'
                     />
                     <TouchableHighlight style={styles.button}>
                         <Button
@@ -88,19 +83,6 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontSize: 36,
         marginBottom: 40
-    },
-    input: {
-        color: '#fff',
-        width: '90%',
-        borderStyle: 'solid',
-        borderWidth: 2,
-        borderColor: '#fff',
-        color: '#fff',
-        width: '90%',
-        padding: 20,
-        borderRadius: 7,
-        fontSize: 18,
-        marginBottom: 20
     },
     button: {
         backgroundColor: '#fff',
