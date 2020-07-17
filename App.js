@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
-import {Navbar} from './src/Navbar'
-import { Registration } from './src/Registration';
-import { Content } from './src/Components/Content'
+import { MainScreen } from './src/screens/MainScreen';
+import { AddBetScreen } from './src/screens/AddBetScreen';
 
 export default function App() {
+  const [todoId, setTodoId] = useState(null)
+
+  let mainScreen = (
+    <MainScreen />
+  )
+
+  if(todoId) {
+    mainScreen = <AddBetScreen />
+  }
+
+
   return (
     <View style={styles.container}>
-      <Navbar />
-      <Content />
-
+      {mainScreen}
     </View>
   );
 }

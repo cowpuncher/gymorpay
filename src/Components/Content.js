@@ -23,7 +23,7 @@ export const Content = props => {
     return (
         <View style={styles.blockTodo}>
             <ImageBackground 
-                source={require('../Components/assets/bgcontent.png')}
+                source={require('../../assets/bgcontent.png')}
                 style={{width: '100%', height: '100%', padding: 20}} 
             >
                 <AddTodo onSubmit={addTodo} />
